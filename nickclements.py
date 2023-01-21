@@ -1,3 +1,6 @@
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" && export PATH="/usr/local/opt/python/libexec/bin:$PATH" && brew install python 
+#
+
 import sys
 from PyQt5.QtCore import Qt, QMimeData, QUrl
 from PyQt5.QtGui import QStandardItemModel, QStandardItem
