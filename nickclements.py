@@ -224,7 +224,7 @@ class MainWindow(QMainWindow):
 
         #finalVideo.close()
 
-        final_video.write_videofile(f"final-{currentTime}.mp4", codec='mpeg4', audio_codec='aac')
+        final_video.write_videofile(f"final-{currentTime}.mp4", codec='mpeg4', audio_codec='aac') #make sure to change if windows
         time.sleep(1)
 
         print("Cleaning Uncessary Files:")
