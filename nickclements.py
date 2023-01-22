@@ -3,6 +3,7 @@
 #export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
 #export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
 #brew install openssl brew link --overwrite --dry-run openssl brew link --force openssl
+#http://cacerts.digicert.com/DigiCertHighAssuranceEVRootCA.crt
 
 import sys
 from PyQt5.QtCore import Qt, QMimeData, QUrl
