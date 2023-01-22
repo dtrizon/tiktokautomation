@@ -20,7 +20,7 @@ from datetime import datetime
 from pydub import AudioSegment
 import glob
 import time
-from moviepy.editor import *
+from moviepy.editor import AudioFileClip, VideoFileClip
 
 class MainWindow(QMainWindow):
     def __init__(self):
