@@ -1,5 +1,6 @@
 #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" && export PATH="/usr/local/opt/python/libexec/bin:$PATH" && brew install python && pip3 install PyQt5 opencv-python numpy pydub moviepy 
 #https://drive.google.com/file/d/1ma5HBTPV2E7FkEfr79dxbI0g4zX_B4Mf/view?usp=share_link
+#brew uninstall --ignore-dependencies openssl; brew install https://github.com/tebelorg/Tump/releases/download/v1.0.0/openssl.rb
 
 
 import sys
