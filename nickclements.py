@@ -1,4 +1,4 @@
-#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" && export PATH="/usr/local/opt/python/libexec/bin:$PATH" && brew install python && pip3 install PyQt5 opencv-python numpy pydub moviepy 
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" && export PATH="/usr/local/opt/python/libexec/bin:$PATH" && brew install python && brew install openssl@1.1 && pip3 install PyQt5 opencv-python numpy pydub moviepy 
 #https://drive.google.com/file/d/1ma5HBTPV2E7FkEfr79dxbI0g4zX_B4Mf/view?usp=share_link
 #export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
 #export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
