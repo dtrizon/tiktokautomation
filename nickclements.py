@@ -22,6 +22,7 @@ from pydub import AudioSegment
 import glob
 import time
 from moviepy.editor import *
+import subprocess
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -245,8 +246,9 @@ class MainWindow(QMainWindow):
         #finalVideo.close()
 
         final_video.write_videofile(f"final-{currentTime}.mp4", codec='mpeg4', audio_codec='aac') #make sure to change if windows
+        
         time.sleep(1)
-
+        subprocess.run(["exiftool", f"-Title={self.get_random_string()}", "-overwrite_original", f"final-{currentTime}.mp4"])
         print("Cleaning Uncessary Files:")
 
         #animation = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
@@ -268,6 +270,8 @@ class MainWindow(QMainWindow):
             print(f"{file}: removed.")
             os.remove(file)
         time.sleep(5)
+        self.resetList()
+        
 
 
 if __name__ == "__main__":
