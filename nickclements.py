@@ -5,7 +5,7 @@
 #https://drive.google.com/drive/u/0/folders/15nU34WeQUOgGaB-pGQqlee3UVlvz-sIX
 #brew install openssl@1.1
 ##pip3 install pyqt5 opencv-python pydub moviepy
-
+#https://github.com/Zulko/moviepy/issues/591
 
 import sys
 from PyQt5.QtCore import Qt, QMimeData, QUrl
