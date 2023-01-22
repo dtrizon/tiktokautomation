@@ -122,7 +122,17 @@ class MainWindow(QMainWindow):
         for file_path in files_list:
             item = QStandardItem(file_path)
             model.appendRow(item)
-
+            
+    def resetList(self):
+        model = self.list_view.model()
+        if (model.rowCount() > 0):
+            model.removeRows(0, model.rowCount())
+        files_list = [os.path.join(self.entryBox.text(), file) for file in os.listdir(self.entryBox.text())]
+        for file_path in files_list:
+            item = QStandardItem(file_path)
+            model.appendRow(item)
+        print("Done!")
+        
     def dragEnterEvent(self, event):
         if event.mimeData().hasUrls():
             event.accept()
