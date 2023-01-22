@@ -6,7 +6,8 @@
 #brew install openssl@1.1
 ##pip3 install pyqt5 opencv-python pydub moviepy
 #https://github.com/Zulko/moviepy/issues/591
-
+import random
+import string
 import sys
 from PyQt5.QtCore import Qt, QMimeData, QUrl
 from PyQt5.QtGui import QStandardItemModel, QStandardItem
@@ -96,7 +97,14 @@ class MainWindow(QMainWindow):
         widgetWhat = QWidget(self)
         widgetWhat.setLayout(layout)
         self.setCentralWidget(widgetWhat)
-
+        
+    def get_random_string(self):
+        length = 10
+        # choose from all lowercase letter
+        letters = string.ascii_lowercase
+        result_str = ''.join(random.choice(letters) for i in range(length))
+        return result_str
+        
     def resumeMedia(self):
         if (self.media_player != ""):
             self.media_player.play()
