@@ -114,6 +114,8 @@ class MainWindow(QMainWindow):
 
     def addFilesToListBox(self):
         model = self.list_view.model()
+        if (model.rowCount() > 0):
+            model.removeRows(0, model.rowCount())
         pathFiles = str(QFileDialog.getExistingDirectory(self, "Select a Folder"))
         self.entryBox.setText(pathFiles)
         files_list = [os.path.join(pathFiles, file) for file in os.listdir(pathFiles)]
