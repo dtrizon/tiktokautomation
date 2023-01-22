@@ -2,6 +2,7 @@
 #https://drive.google.com/file/d/1ma5HBTPV2E7FkEfr79dxbI0g4zX_B4Mf/view?usp=share_link
 #export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
 #export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
+#https://drive.google.com/drive/u/0/folders/15nU34WeQUOgGaB-pGQqlee3UVlvz-sIX
 
 import sys
 from PyQt5.QtCore import Qt, QMimeData, QUrl
