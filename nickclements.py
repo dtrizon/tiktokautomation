@@ -3,6 +3,9 @@
 #export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
 #export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
 #https://drive.google.com/drive/u/0/folders/15nU34WeQUOgGaB-pGQqlee3UVlvz-sIX
+#export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+#export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+#export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 
 import sys
 from PyQt5.QtCore import Qt, QMimeData, QUrl
