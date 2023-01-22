@@ -6,6 +6,7 @@
 #brew install openssl@1.1
 ##pip3 install pyqt5 opencv-python pydub moviepy
 #https://github.com/Zulko/moviepy/issues/591
+import subprocess
 import random
 import string
 import sys
