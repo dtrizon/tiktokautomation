@@ -149,8 +149,8 @@ class MainWindow(QMainWindow):
             self.media_player2.play()
 
     def convertFunc(self):
-        vid1path = self.media_player.currentMedia().canonicalUrl().toString().split(r"file:///")[1]
-        vid2path = self.media_player2.currentMedia().canonicalUrl().toString().split(r"file:///")[1]
+        vid1path = self.media_player.currentMedia().canonicalUrl().toString().split(r"file://")[1]
+        vid2path = self.media_player2.currentMedia().canonicalUrl().toString().split(r"file://")[1]
         self.media_player = QMediaPlayer()
         self.media_player2 = QMediaPlayer()
         video1 = cv2.VideoCapture(vid1path)
